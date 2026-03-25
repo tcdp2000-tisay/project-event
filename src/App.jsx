@@ -37,7 +37,7 @@ function App() {
           <h1>Book Appointment</h1>
           <p className="counter">Storage: {appointments.length} / 5</p>
           <form onSubmit={handleBook}>
-            <input type="text" name="name" placeholder="Patient Name" value={formData.name} onChange={handleChange} required />
+            <input type="text" name="name" placeholder="Guest Name" value={formData.name} onChange={handleChange} required />
             <input type="date" name="date" value={formData.date} onChange={handleChange} required />
             <input type="time" name="time" value={formData.time} onChange={handleChange} required />
             <button type="submit" disabled={appointments.length >= 5} className="btn-primary">
